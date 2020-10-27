@@ -104,7 +104,7 @@ section {
 }
 body {
   line-height: 1;
-  font-family: "Roboto", Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, "Microsoft JhengHei", sans-serif;
 }
 ol,
 ul {
@@ -147,6 +147,14 @@ h2 {
   line-height: 75px;
 }
 
+p {
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
 .d-flex {
   display: flex;
 }
@@ -160,13 +168,157 @@ h2 {
 }
 
 .flex-wrap {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.mb-1 {
+  margin-bottom: 24px;
+}
+
+.mb-2 {
+  margin-bottom:32px;
+}
+
+.mb-3 {
+  margin-bottom: 40px;
+}
+
+.mb-5 {
+  margin-bottom: 56px;
+}
+
+.mb-6 {
+  margin-bottom: 68px;
+}
+
+.mt-5 {
+  margin-top: 56px;
+}
+
+.ml-1 {
+  margin-left: 24px;
+}
+
+.pb-1 {
+  padding-bottom: 20px;
 }
 
 .border {
-    border: 1px solid #707070;
+  border: 1px solid #707070;
+}
+
+.text-bold {
+  font-weight: 900;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-sm {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+header {
+  background: url("https://hexschool.github.io/webLayoutTraining1st/week2/banner.png")
+    no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 960px;
+  align-items: center;
+  color: #ffffff;
+}
+
+.social__text {
+  font-size: 24px;
+  line-height: 36px;
 }
 
 .social__list {
+  margin-top: 48px;
+}
 
+.social__list__item {
+  margin-right: 16px;
+}
+
+.person {
+  padding: 64px 0 56px;
+  width: 384px;
+  margin: 0 auto;
+}
+
+.person__list__item {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.person__list__2 {
+  padding-top: 32px;
+  border-top: 1px solid #000000;
+}
+
+.person__list__2__item {
+  font-size: 24px;
+  line-height: 42px;
+  display: inline-block;
+  position: relative;
+}
+
+.person__list__2__item::before {
+  content: "";
+  background-color: #891818;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: -36px;
+}
+
+.works {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 64px 0 160px;
+}
+
+.otherWorks {
+  padding: 64px 0 160px;
+}
+
+.otherWorks__list__item__name {
+  margin-top: 16px;
+  line-height: 42px;
+  color: #000;
+}
+
+.contact {
+  background-color: #000000;
+  padding: 64px 0 80px;
+  color: #ffffff;
+}
+
+.contact__list__item {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.contact__list__item a {
+  color: #ffffff;
+}
+
+.otherWorks__list__item a:hover, .contact__list__item a:hover {
+  opacity: .8;
+  transition: .2s;
+}
+
+.contact__title, .works__title {
+  margin-bottom: 16px;
 }
